@@ -33,5 +33,5 @@ app.get('/api', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`🚀 Servidor corriendo :O en http://localhost:${PORT}`);
 });
