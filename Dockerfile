@@ -12,6 +12,7 @@ FROM node:18-alpine AS production
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package*.json ./
+COPY waifu_amazon.png ./
 RUN npm install --only=production && npm cache clean --force  # ← CAMBIA npm ci POR npm install
 ENV NODE_ENV=production
 ENV PORT=3000
